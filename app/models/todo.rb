@@ -12,11 +12,11 @@ class Todo < ApplicationRecord
     length:{minimum:20},
     presence:true
   }
-  validates :status, {
-    # numericality:{less_than_or_equal_to:3, greater_than_or_equal_to:0}
-    numericality:{in:0..3}
-  }
-  validates :priority, {
-    numericality:{in:0..2}
-  }
+  # validates :status, {
+  #   # numericality:{less_than_or_equal_to:3, greater_than_or_equal_to:0}
+  #   numericality:{in:0..3}
+  # }
+  # validates :priority, {
+  #   numericality:{in:0..2}
+  # }
 end
