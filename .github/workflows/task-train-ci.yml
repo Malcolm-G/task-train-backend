@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.0.2'
+      with:
+        ruby-version: '3.0.2'
       - run: bundle install
       - run: bundle exec rails db:migrate RAILS_ENV=test
       - run: bundle exec rspec spec
